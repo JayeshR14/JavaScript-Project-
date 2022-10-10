@@ -1,0 +1,110 @@
+
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div class="gameName">Tic Tac Toe</div>
+  <div class="navbar">
+    <div class="subnav">
+    <div style="display:flex;justify-content: center;align-items: center;"><a href="#" id="restart">Restart</a></div>
+    <div style="display:flex;justify-content: center;align-items: center;"><a href="#">How To Play</a></div>
+    <div style="display:flex;justify-content: center;align-items: center;"><a href="#">More games</a></div>
+  </div>
+  </div>
+  <div class="main-khanu">
+    <!-- plines -->
+    <div class="line" id="l1"></div>
+    <div class="line" id="l2"></div>
+    <div class="line" id="l3"></div>
+    <div class="line" id="l4"></div>
+    <div class="line" id="l5"></div>
+    <div class="line" id="l6"></div>
+    <div class="line" id="l7"></div>
+    <div class="line" id="l8"></div>
+    <div class="khanu1">
+       <div class="k1-1" id="m11" onclick="PutXY(this.id,this.className)"><p></p></div>
+       <div class="k1-2" id="m12" onclick="PutXY(this.id,this.className)"><p></p></div>
+       <div class="k1-3" id="m13" onclick="PutXY(this.id,this.className)"><p></p></div>
+     </div>
+     <div class="khanu2">
+      <div class="k2-1" id="m21" onclick="PutXY(this.id,this.className)"><p></p></div>
+      <div class="k2-2" id="m22" onclick="PutXY(this.id,this.className)"><p></p></div>
+      <div class="k2-3" id="m23" onclick="PutXY(this.id,this.className)"><p></p></div>
+    </div>
+    <div class="khanu3">
+      <div class="k3-1" id="m31" onclick="PutXY(this.id,this.className)"><p></p></div>
+      <div class="k3-2" id="m32" onclick="PutXY(this.id,this.className)"><p></p></div>
+      <div class="k3-3" id="m33" onclick="PutXY(this.id,this.className)"><p></p></div>
+    </div>
+</div>
+<div class="score">
+  <div class="scoreHeading">
+         <div>Score</div>
+  </div>
+  <div class="score-top">
+    <div class="s-p-1">Player1</div>
+    <div class="s-p-2">Player2</div>
+  </div>
+  <div class="score-bottom">
+    <div><P class="p-1-score">0</P></div>
+    <div><p class="p-2-score">0</p></div>
+  </div>
+</div>
+
+  <div class="players">
+    <div class="playerNames">
+     <div style="margin-bottom: 30px;">
+       <label>X Player Name : </label>
+       <input type="text" id="xPlayer"/>
+       </div>
+       <div>
+       <label>O Player Name :</label>
+       <input type="text" id="oPlayer"/>
+     </div>
+     <div style="margin-top: 25px;">
+       <button id="playGame">Play</button>
+     </div>
+     </div>
+  </div>
+
+  <div class="gameControl">
+     <div class="newGame">
+        <button class="newbtn">New Game</button>
+     </div>
+     <div class="rules">
+        <button>How To Play</button>
+     </div>
+     <div>
+       <button>More apps</button>
+     </div>
+ </div>
+
+ <div class="winnerList">
+   <div class="sub-w">
+     <img style="height:120px"src="logos/trophy.png">
+     <p id="winner" style="margin-top: 30px;margin-bottom: 20px;"></p>
+     <p class="inc">+1</p>
+     <button class="c-W-L">Close</button>
+   </div>
+ </div>
+ <!-- <div class="moreApps">
+     <div class="subApps">
+       <p>Our Apps</p>
+       <a style="width:100px;" href="https://jayeshr14.github.io/Notes/public/index.html">https://jayeshr14.github.io/Notes/public/index.html</a>
+       <a href="https://jayeshr14.github.io/Flip-Game/flipcard.html">https://jayeshr14.github.io/Flip-Game/flipcard.html</a>
+       <a href="https://jayeshr14.github.io/Password-Generator/PssGenerator.html">https://jayeshr14.github.io/Password-Generator/PssGenerator.html</a> 
+     </div>
+ </div> -->
+  <script src="tictactoe.js">
+        
+  </script>
+</body>
+</html>

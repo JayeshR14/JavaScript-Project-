@@ -1,0 +1,133 @@
+body{
+  
+  font-family: 'Roboto Mono', monospace;
+   background-color: rgb(77, 75, 75); 
+  
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+p{
+  color:white;
+  font-weight: bold;
+  font-size:40px;
+  margin-bottom: 0px;
+}
+.back img{
+  height:65px
+}
+.main-box{
+  height:fit-content;
+max-width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.flipBox{
+  display: flex;
+  justify-content: center;
+  height:90px;
+  width:90px;
+  border-style: solid;
+  background-color: rgb(114, 191, 253);
+
+}
+.inner-flip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:90px;
+  width:90px;
+}
+.main-box div{
+  justify-content: center;
+}
+.back{
+  display: none;
+}
+.chanceText{
+  margin-bottom: 20px;
+  height:30px;
+  max-width: fit-content;
+  margin-top: 15px;
+  font-size:23px;
+  
+}
+
+.states{
+  display: flex;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  min-width:100%;
+  background-color: rgba(43,45,47,0.9);
+  display: none;
+  
+}
+.bottom{
+  
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play{
+  margin-top: 25px;
+  width:320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.notic{
+  display: flex;
+  justify-content: center;
+}
+.notic p{
+  color:rgb(255, 255, 255);
+  font-size: 25px;
+}
+li{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.states1{
+  height:100%;
+  min-width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#resBtn{
+  outline: none;
+  border: solid;
+  height:48px;
+  width:120px;
+  font-size: 20px;
+  background-color: transparent;
+  border-color: gray;
+  color: rgb(192, 191, 191);
+  border-radius: 10px;
+}
+.subStates{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-width:10px;
+  border-style:ridge;
+  border-color: gray;
+  background-color: rgb(19, 17, 17);
+  height: 300px;
+  width:280px;
+  border-radius: 12px;
+}
